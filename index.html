@@ -106,14 +106,14 @@ details[open] summary::after{transform:rotate(180deg) scale(1.3)}
     <button class="open-btn" id="openBtn">Tap to open your invitation</button>
   </div>
   <div class="cover-photo" aria-hidden="true">
-    <img alt="Tarun and Soumya" src="" />
+    <img alt="Tarun and Soumya" src="wedding-photo.jfif" />
   </div>
 </section>
 
 <div class="gold"></div>
 <header class="hero">
   <p class="sh">॥ श्री गणेशाय नमः ॥</p>
-  <div class="arch"><img alt="Tarun and Soumya on a suspension bridge" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tM" /></div>
+  <div class="arch"><img alt="Tarun and Soumya on a suspension bridge" src="wedding-photo.jfif" /></div>
   <h1>Tarun <i>weds</i> Soumya</h1>
   <p>2 December 2026 · Dulhan Palace, Mughalsarai</p>
   <div class="count" aria-label="Countdown to the Tilak ceremony">
@@ -127,7 +127,12 @@ details[open] summary::after{transform:rotate(180deg) scale(1.3)}
 <div class="frieze" role="img" aria-label="Illustration of a royal baraat with elephants, horses and a doli carried by bearers"><div class="track">
 <svg width="2909" height="200" viewBox="0 0 3200 220" xmlns="http://www.w3.org/2000/svg"><defs>
 <g id="chh" fill="#2A4799"><path d="M0 100Q40 30 80 100Z"/><rect x="6" y="100" width="68" height="98"/><path d="M28 198V140Q40 120 52 140V198Z" fill="#1B2F72"/></g>
-<g id="brr"><circle cy="76" r="9" fill="#E8B84A"/><ellipse cy="68" rx="12" ry="7" fill="#B3124A" stroke="#F3CF6B"/><path d="M-10 88h20l-2 52h-16z" fill="#F3EAD0" stroke="#C9971C"/><path d="M-4 14[...}
+<g id="brr"><circle cy="76" r="9" fill="#E8B84A"/><ellipse cy="68" rx="12" ry="7" fill="#B3124A" stroke="#F3CF6B"/><path d="M-10 88h20l-2 52h-16z" fill="#F3EAD0" stroke="#C9971C"/><path d="M-4 14c0-8 10-18 16-18 6 0 16 8 16 18v16H-4z" fill="#B3124A" stroke="#F3CF6B" stroke-width="2"/></g>
+<g id="ele"><g fill="#C9971C"><rect x="62" y="140" width="34" height="60" rx="10"/><rect x="108" y="146" width="30" height="54" rx="10" opacity=".8"/><rect x="196" y="146" width="30" height="54" rx="10" opacity=".8"/><rect x="20" y="120" width="26" height="70" rx="10"/></g><g fill="#F3EAD0"><circle cx="105" cy="120" r="18"/><circle cx="185" cy="120" r="18"/><circle cx="250" cy="124" r="20"/></g></g>
+<g id="hor"><path d="M34 112Q6 130 14 186" stroke="#C9971C" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M60 138L48 198M82 142L92 198M140 142L132 172L142 198M158 138L168 198" stroke="#C9971C" stroke-width="8" fill="none" stroke-linecap="round"/><path d="M20 86l40-14 10 12-20 24 4 26-16 1-8-22-64-8z" fill="#B3124A" stroke="#F3CF6B" stroke-width="2"/></g>
+<g id="rdr"><path d="M96 94L92 124" stroke="#F3EAD0" stroke-width="8" stroke-linecap="round"/><path d="M90 52H122L126 94H86Z" fill="#B3124A" stroke="#F3CF6B" stroke-width="2"/><circle cx="106" cy="44" r="16" fill="#E8B84A"/><path d="M104 26v18M92 38h24" stroke="#F3CF6B" stroke-width="3" stroke-linecap="round"/></g>
+<g id="dol"><use href="#brr" x="68" opacity=".7"/><use href="#brr" x="262" opacity=".7"/><path d="M120 98V118M220 98V118" stroke="#F3CF6B" stroke-width="3"/><path d="M96 118Q170 36 244 118Z" fill="#F3EAD0" stroke="#C9971C" stroke-width="2"/><path d="M120 118h100" stroke="#C9971C" stroke-width="3"/></g>
+<g id="pro"><use href="#chh" x="120"/><use href="#chh" x="640"/><use href="#chh" x="1120"/><use href="#chh" x="1480"/><use href="#ele" x="0"/><use href="#hor" x="370"/><use href="#rdr" x="370"/><use href="#dol" x="800"/><use href="#rdr" x="1160"/><use href="#hor" x="1440"/><use href="#ele" x="1840"/></g>
 </defs><rect y="198" width="3200" height="8" fill="#C9971C"/><use href="#pro"/><use href="#pro" x="1600"/></svg>
 </div></div>
 
@@ -181,9 +186,6 @@ details[open] summary::after{transform:rotate(180deg) scale(1.3)}
 <script>
 (function(){
   var cover=document.getElementById("cover"),cols=["#F3CF6B","#E0147A","#FF7A00","#FFD9E6"];
-  var heroImg=document.querySelector(".arch img");
-  var coverImg=document.querySelector(".cover-photo img");
-  if(heroImg && coverImg){coverImg.src=heroImg.src;}
   document.getElementById("openBtn").addEventListener("click",function(){
     cover.classList.add("open");
     var bgm=document.getElementById("bgm"),mb=document.getElementById("muteBtn");
