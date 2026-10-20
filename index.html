@@ -3,6 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="You are invited to the wedding celebrations of Tarun and Soumya. 29 November to 6 December 2026.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tarun weds Soumya – Wedding Invitation">
+<meta property="og:description" content="You are royally invited. Tap to see all the celebrations, timings and venues.">
+<meta property="og:url" content="https://tarun887.github.io/Wedding-Invite/">
+<meta property="og:image" content="https://tarun887.github.io/Wedding-Invite/cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tarun887.github.io/Wedding-Invite/cover.jpg">
 <title>Tarun &amp; Soumya – Royal Wedding Invitation</title>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <style>
@@ -15,8 +25,8 @@ html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Poppins,"Segoe UI",sans-serif;overflow-x:hidden}
 h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;margin:0}
 .gold{background:repeating-linear-gradient(90deg,var(--gold) 0 10px,var(--gold2) 10px 14px);height:10px}
-.cover{position:fixed;inset:0;z-index:50;background:var(--maroon);color:var(--gold2);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px;transition:transform .9s cubic-bezier(.7,0,.2,1)}
-.cover::before{content:"";position:absolute;inset:14px;border:3px double var(--gold2);border-radius:150px 150px 10px 10px;pointer-events:none}
+.cover{position:fixed;top:0;right:0;bottom:0;left:0;z-index:50;background:var(--maroon);color:var(--gold2);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px;transition:transform .9s cubic-bezier(.7,0,.2,1)}
+.cover::before{content:"";position:absolute;top:14px;right:14px;bottom:14px;left:14px;border:3px double var(--gold2);border-radius:150px 150px 10px 10px;pointer-events:none}
 .cover.open{transform:translateY(-100%)}
 .cover .sh{font-size:15px;margin:0 0 14px}
 .cover h1{font:700 clamp(34px,10vw,54px)/1.15 "Cinzel Decorative",Georgia,serif;color:#fff}
@@ -25,7 +35,7 @@ h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;margin:0}
 .open-btn{margin-top:22px;border:2px solid var(--gold2);background:var(--gold);color:#3b0a1c;font:600 16px Poppins,sans-serif;padding:13px 30px;border-radius:999px;cursor:pointer}
 .open-btn:focus-visible,.tab:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
 .petal{position:fixed;top:-40px;z-index:60;pointer-events:none;animation:fall linear forwards}
-@keyframes fall{to{transform:translateY(110vh) rotate(540deg)}}
+@-webkit-keyframes fall{to{-webkit-transform:translateY(110vh) rotate(540deg)}}@keyframes fall{to{transform:translateY(110vh) rotate(540deg)}}
 .hero{background:var(--maroon);color:#fff;text-align:center;padding:34px 20px 40px}
 .hero .sh{color:var(--gold2);margin:0 0 14px;font-size:14px}
 .arch{width:min(300px,80vw);margin:0 auto;padding:7px;background:var(--gold);border-radius:150px 150px 12px 12px}
@@ -38,8 +48,8 @@ h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;margin:0}
 .count b{display:block;font:700 30px "Cormorant Garamond",Georgia,serif;line-height:1.1}
 .count small{font-size:12px}
 .frieze{background:var(--blue);overflow:hidden;border-block:3px solid var(--gold)}
-.track{display:flex;width:max-content;animation:march 50s linear infinite}.track svg{display:block;flex:none}
-@keyframes march{to{transform:translateX(-50%)}}
+.track{display:flex;width:max-content;-webkit-animation:march 50s linear infinite;animation:march 50s linear infinite}.track svg{display:block;flex:none}
+@-webkit-keyframes march{to{-webkit-transform:translateX(-50%)}}@keyframes march{to{transform:translateX(-50%)}}
 .tabs{display:flex;gap:8px;justify-content:center;padding:18px 12px 6px;flex-wrap:wrap;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5}
 .tab{border:2px solid var(--gold);background:transparent;color:var(--ink);font:600 14px Poppins,sans-serif;padding:8px 16px;border-radius:999px;cursor:pointer}
 .tab[aria-pressed="true"]{background:var(--maroon);color:var(--gold2);border-color:var(--maroon)}
@@ -68,7 +78,7 @@ details[open] summary::after{transform:rotate(180deg) scale(1.3)}
 .actions p{color:var(--muted);margin:6px 0 14px}
 .actions .btn{margin:6px}
 #msg{min-height:22px;color:var(--green);font-weight:600;font-size:14px}
-@media (prefers-reduced-motion:reduce){.cover{transition:none}.petal{display:none}.track{animation:none}}
+@media (prefers-reduced-motion:reduce){.cover{transition:none}.petal{display:none}.track{animation:none}.frieze{overflow-x:auto;-webkit-overflow-scrolling:touch}}
 .mute{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:40;width:46px;height:46px;border-radius:50%;border:2px solid var(--gold2);background:var(--maroon);color:var(--gold2);display:none;align-items:center;justify-content:center;cursor:pointer;padding:0}
 .mute.show{display:flex}.mute svg{width:24px;height:24px}.mute .off{display:none}.mute.muted .on{display:none}.mute.muted .off{display:block}
 .mute:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
